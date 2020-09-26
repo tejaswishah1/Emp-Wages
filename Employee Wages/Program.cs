@@ -10,7 +10,7 @@ namespace Employee_Wages
             int IS_FULL_TIME = 1;
             int EMP_RATE_PER_HOUR = 20;
             //variable
-            int empHrs ;
+            int empHrs = 0;
             int empWage = 0;
             Random random = new Random();
             //Computation
@@ -19,6 +19,8 @@ namespace Employee_Wages
             {
                 empHrs = 8;
             }
+            else
+                empHrs = 4; ////Assuming part time hours as 4
            
             empWage = empHrs * EMP_RATE_PER_HOUR;
 
